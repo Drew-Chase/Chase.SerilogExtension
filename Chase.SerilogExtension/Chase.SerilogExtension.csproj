@@ -4,10 +4,24 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.0.1</Version>
+        <Title>Chase Serilog Extension</Title>
+        <Authors>Drew Chase</Authors>
+        <Description>This extension adds a EnhancedWriteToFile option to the Serilog logger to allow for additional options when logging to a file like automatically archiving old logs. </Description>
+        <Copyright>GNU 3.0</Copyright>
+        <PackageProjectUrl>https://github.com/Drew-Chase/Chase.SerilogExtension</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.MD</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/Drew-Chase/Chase.SerilogExtension</RepositoryUrl>
+        <RepositoryType>Github</RepositoryType>
+        <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+        <None Include="../LICENSE" Pack="true" PackagePath="/" />
+        <None Include="../README.MD" Pack="true" PackagePath="/" />
     </ItemGroup>
 
 </Project>
